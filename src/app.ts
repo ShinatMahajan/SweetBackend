@@ -15,6 +15,11 @@ app.use(
 
 app.use(express.json());
 
+// Health check endpoint
+app.get("/", (req, res) => {
+  res.json({ message: "Sweet Shop Backend is running! 🍬", status: "ok" });
+});
+
 app.use("/api/auth", authRoutes);
 app.use("/api/sweets", sweetRoutes);
 
