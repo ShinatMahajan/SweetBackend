@@ -9,7 +9,7 @@
     "start": "node dist/server.js",
     "lint": "echo \"no lint configured\""
   },
-  "keywords": [],
+
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -35,3 +35,4 @@
     "mongoose": "^9.0.1"
   }
 }
+
