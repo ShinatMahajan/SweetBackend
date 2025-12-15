@@ -1,10 +1,21 @@
 import express from "express";
+
+const app = express();
+
+app.get("/", (req, res) => {
+  res.status(200).json({
+    message: "Sweet Shop Backend is running 🚀",
+    status: "OK"
+  });
+});
+
+
 import cors from "cors";
 
 import authRoutes from "./modules/auth/auth.routes";
 import sweetRoutes from "./modules/sweets/sweet.routes";
 
-const app = express();
+
 
 app.use(
   cors({
